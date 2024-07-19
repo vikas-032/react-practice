@@ -1,9 +1,9 @@
 
-export const TaskCard = (props) => {
+export const TaskCard = ({task,handleDelete}) => {
   return (
-    <li key={props.task.id} className={props.task.completed ? "completed" : "incomplete "}>
-      <span>{props.task.id} - {props.task.name}</span>
-      <button  className='del'>Delete</button>
+    <li key={task.id} className={task.completed ? "completed" : "incomplete "}>
+      <span>{task.id} - {task.name}</span>
+      <button onClick={() => handleDelete(task.id)} className='del'>Delete</button>
     </li>
   )
 }
