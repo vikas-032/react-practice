@@ -10,11 +10,11 @@ function App() {
   return (
     <div className="App">
       <Header/>
-      <TaskList/>
+      <TaskList title="Random" subtitle ="test"/>
 
 
     </div> 
   ); 
 }
-
+ 
 export default App;  

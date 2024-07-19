@@ -1,40 +1,44 @@
-
-
-p{
+p {
   font-size: 18px;
   text-align: center;
   align-items: center;
+
 }
 
-button{
+button {
   padding: 10px;
   margin: 10px;
   font-size: 18px;
   color: white;
+
 }
 
-button.add{
+button.add {
   background-color: bisque;
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-left: 400px;
+
 }
 
-button.sub{
+button.sub {
   background-color: red;
   justify-content: center;
   align-items: center;
-
 }
 
-button.reset{
+button.reset {
   background-color: aqua;
 }
 
-button.del{
-  background-color: red;
+button.del {
+  background-color: black;
 }
 
-button.trigger{
+button.trigger {
   background-color: purple;
+  padding-left: 40px;
+ 
 }
+
