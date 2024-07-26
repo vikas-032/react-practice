@@ -53,10 +53,8 @@ export const TaskList = (props) => {
         </p>
         <p className="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, quam!</p>
       </BoxCard>
-<div>
-  <h1>My name</h1>
-</div>
 
+        
     </>
   );
 };

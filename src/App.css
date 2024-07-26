@@ -1,8 +1,29 @@
+.App {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  font-size: 28px;
+  text-align: center;
+  margin: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+
 p {
   font-size: 18px;
   text-align: center;
   align-items: center;
-
 }
 
 button {
@@ -10,7 +31,6 @@ button {
   margin: 10px;
   font-size: 18px;
   color: white;
-
 }
 
 button.add {
@@ -19,7 +39,6 @@ button.add {
   align-items: center;
   text-align: center;
   margin-left: 400px;
-
 }
 
 button.sub {
@@ -39,6 +58,4 @@ button.del {
 button.trigger {
   background-color: purple;
   padding-left: 40px;
- 
 }
-
