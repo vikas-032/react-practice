@@ -1,1 +1,50 @@
 Q1  Explain virtual dom and its role in React?
+Ans.. The virtual DOM is the light weight javascript representation of (DOM) Document Object Model that react use to 
+optimise how changes applied to the dom.
+The Virtual DOM role in react is to improve performance by:-
+1: Reducing Expensive DOM Opertaion :--- The virtual dom updated faster than actual dom. so react can make changes to the virtual DOM more
+cheaply.
+
+2: Identifed and Updating only affected Parts:---- When a component state changes react compare the new Virtual DOM tree to the previous one,
+and only update the part that are different.
+
+// Virtual DOM is Key React Features that enhance performance and efficient UI updates.
+
+
+
+Q2  How does react handle event Handling?
+Ans... Handling event in react is similar to handling event on Dom Elements
+:--- React Event names as camelCase rather than Lowercase.
+:--- With JSX you can pass a function as event handler, rather than string.
+for example--
+
+<button onclick ="activeLeaser()">
+Active Leaser
+</button>
+
+is slightly different in React:-
+<button onClick ={activateLeaser}>
+Activate Leaser
+</button>
+
+
+Q3 How can we handle error in React?
+Ans... There are different type of errors in React:-
+1- Syntax Error
+2- Reffernce Error
+3- Type Error
+4- Components lifecycle error
+
+Error boundries were introduce in react v16 and to use them you need to define the class component within either or both of the following lifecycle method:-
+getDerivedStateFromError() or componentDidCatch() :---this lifecycle method rendeers fallback UI after an error is thrown.
+
+
+
+Q4 How does react handle component state and Props?
+Ans... while both holds the information that influences the output and render they are different in one important way (similar to the function parameter)
+where state is managed within the component (similar to the function within the function).
+
+
+Q5  What is JSX?
+Ans...  Javascript XML (JSX) is a syntax extension for javascript that allow you to write a HTML code in react a Javascript Library.
+JSX is similar to html , but it is stricker and can display dynamic information . It is extension of the javascript language on ES6.
