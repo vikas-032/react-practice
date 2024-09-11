@@ -63,3 +63,61 @@ JSX: It stands for JavaScript and XML and allows you to write HTML in React.
 Props and State: props are like function parameters and State is similar to variables.
 Context: This allows data to be passed through components as props in a hierarchy.
 Virtual DOM: It is a lightweight copy of the actual DOM which makes DOM manipulation easier.
+
+
+Q9. Explain props and state in React with differences
+Props are used to pass data from one component to another. The state is local data storage that is local to the component only and cannot be passed to other components.
+
+Here is the difference table of props and state In react
+
+PROPS
+
+STATE
+
+The Data is passed from one component to another.	The Data is passed within the component only.
+It is Immutable (cannot be modified).	It is Mutable ( can be modified).
+Props can be used with state and functional components.	The state can be used only with the state components/class component (Before 16.0).
+Props are read-only.	The state is both read and write.
+Q11. What is virtual DOM in React?
+React uses Virtual DOM which is like a lightweight copy of the actual DOM(a virtual representation of the DOM). So for every object that exists in the original DOM, there is an object for that in React Virtual DOM. It is the same, but it does not have the power to directly change the layout of the document. Manipulating DOM is slow, but manipulating Virtual DOM is fast as nothing gets drawn on the screen. So each time there is a change in the state of our application, the virtual DOM gets updated first instead of the real DOM.
+
+Q10. What is JSX?
+JSX is basically a syntax extension of regular JavaScript and is used to create React elements. These elements are then rendered to the React DOM. All the React components are written in JSX. To embed any JavaScript expression in a piece of code written in JSX we will have to wrap that expression in curly braces {}. 
+
+Example of JSX: The name written in curly braces { } signifies JSX
+
+
+const name = "Learner";
+
+const element = (
+  <h1>
+    Hello,
+    {name}.Welcome to GeeksforGeeks.
+  </h1>
+);
+Q12. What are components and their type in React?
+A Component is one of the core building blocks of React. In other words, we can say that every application you will develop in React will be made up of pieces called components. Components make the task of building UIs much easier. 
+
+ In React, we mainly have two types of components: 
+
+Functional Components: Functional components are simply javascript functions. We can create a functional component in React by writing a javascript function. 
+Class Components: The class components are a little more complex than the functional components. The functional components are not aware of the other components in your program whereas the class components can work with each other. We can pass data from one class component to another class component.
+Q13. How do browsers read JSX?
+In general, browsers are not capable of reading JSX and only can read pure JavaScript. The web browsers read JSX with the help of a transpiler. Transpilers are used to convert JSX into JavaScript. The transpiler used is called Babel
+
+Q14. Explain the steps to create a react application and print Hello World?
+To install React, first, make sure Node is installed on your computer. After installing Node. Open the terminal and type the following command.
+
+npx create-react-app <<Application_Name>>
+Navigate to the folder.
+
+cd <<Application_Name>>
+This is the first code of ReactJS Hello World!
+
+
+import React from "react";
+import "./App.css";
+function App() {
+  return <div className="App">Hello World !</div>;
+}
+export default App;
