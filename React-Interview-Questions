@@ -121,3 +121,91 @@ function App() {
   return <div className="App">Hello World !</div>;
 }
 export default App;
+
+
+
+
+
+
+1. What are the differences between Java and JavaScript? 
+JavaScript is a client-side scripting language and Java is object Oriented Programming language. Both of them are totally different from each other.
+
+JavaScript: It is a light-weighted programming language (“scripting language”) for developing interactive web pages. It can insert dynamic text into the HTML elements. JavaScript is also known as the browser’s language.
+Java: Java is one of the most popular programming languages. It is an object-oriented programming language and has a virtual machine platform that allows you to create compiled programs that run on nearly every platform. Java promised, “Write Once, Run Anywhere”.
+2. What are JavaScript Data Types? 
+There are three major Data types in JavaScript.
+
+Primitive
+Numbers
+Strings
+Boolean
+Symbol
+Trivial
+Undefined
+Null
+Composite
+Objects
+Functions
+Arrays
+3. Which symbol is used for comments in JavaScript? 
+Comments prevent the execution of statements. Comments are ignored while the compiler executes the code. There are two type of symbols to represent comments in JavaScript:
+
+Double slash: It is known as a single-line comment.
+// Single line comment
+Slash with Asterisk: It is known as a multi-line comment.
+/* 
+Multi-line comments
+...
+*/
+4. What would be the result of 3+2+”7″?
+ Here, 3 and 2 behave like an integer, and “7” behaves like a string. So 3 plus 2 will be 5. Then the output will be 5+”7″ = 57.
+
+5. What is the use of the isNaN function?
+ The number isNan function determines whether the passed value is NaN (Not a number) and is of the type “Number”. In JavaScript, the value NaN is considered a type of number. It returns true if the argument is not a number, else it returns false.
+
+6. Which is faster in JavaScript and ASP script?
+ JavaScript is faster compared to ASP Script. JavaScript is a client-side scripting language and does not depend on the server to execute. The ASP script is a server-side scripting language always dependable on the server.
+
+7. What is negative infinity?
+ The negative infinity is a constant value represents the lowest available value. It means that no other number is lesser than this value. It can be generate using a self-made function or by an arithmetic operation. JavaScript shows the NEGATIVE_INFINITY value as -Infinity.
+
+8. Is it possible to break JavaScript Code into several lines?
+ Yes, it is possible to break the JavaScript code into several lines in a string statement. It can be broken by using the backslash n ‘\n’. 
+For example:
+
+console.log("A Online Computer Science Portal\n for Geeks")
+The code-breaking line is avoid by JavaScript which is not preferable.
+
+let gfg= 10, GFG = 5,
+Geeks =
+gfg + GFG;
+9. Which company developed JavaScript?
+Netscape developed JavaScript and was created by Brenden Eich in the year of 1995.
+
+10. What are undeclared and undefined variables?
+Undefined: It occurs when a variable is declare but not assign any value. Undefined is not a keyword.
+Undeclared: It occurs when we try to access any variable which is not initialize or declare earlier using the var or const keyword. If we use ‘typeof’ operator to get the value of an undeclare variable, we will face the runtime error with the return value as “undefined”. The scope of the undeclare variables is always global.
+11. Write a JavaScript code for adding new elements dynamically. 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="create()">
+        Click Here!
+    </button>
+
+    <script>
+        function create() {
+            let geeks = document.createElement('geeks');
+            geeks.textContent = "Geeksforgeeks";
+            geeks.setAttribute('class', 'note');
+            document.body.appendChild(geeks);
+        }
+    </script>
+</body>
+  
+</html>
