@@ -241,3 +241,70 @@ The variable typing is the type of variable used to store a number and using tha
 
 Geeks = 42;
 Geeks = "GeeksforGeeks";
+
+
+
+5. How to convert the string of any base to integer in JavaScript?
+In JavaScript, parseInt() function is used to convert the string to an integer. This function returns an integer of base which is specified in second argument of parseInt() function. The parseInt() function returns Nan (not a number) when the string doesn’t contain number.
+
+6. Explain how to detect the operating system on the client machine?
+To detect the operating system on the client machine, one can simply use navigator.appVersion or navigator.userAgent property. The Navigator appVersion property is a read-only property and it returns the string that represents the version information of the browser.
+
+7. What are the types of Pop up boxes available in JavaScript?
+There are three types of pop boxes available in JavaScript.
+
+Alert
+Confirm
+Prompt
+8. What is the difference between an alert box and a confirmation box?
+An alert box will display only one button which is the OK button. It is used to inform the user about the agreement has to agree. But a Confirmation box displays two buttons OK and cancel, where the user can decide to agree or not.
+
+9. What is the disadvantage of using innerHTML in JavaScript?
+There are lots of disadvantages of using the innerHTML in JavaScript as the content will replace everywhere. If you use += like “innerHTML = innerHTML + ‘html'” still the old content is replaced by HTML. It preserves event handlers attached to any DOM elements.
+
+10. What is the use of void(0) ?
+The void(0) is used to call another method without refreshing the page during the calling time parameter “zero” will be passed.
+
+11. What are JavaScript Cookies ?
+Cookies are small files that are stored on a user’s computer. They are used to hold a modest amount of data specific to a particular client and website and can be accessed either by the web server or by the client’s computer. When cookies were invented, they were basically little documents containing information about you and your preferences. For instance, when you select the language in which you want to view your website, the website would save the information in a document called a cookie on your computer, and the next time when you visit the website, it would be able to read a cookie saved earlier.
+
+12. How to create a cookie using JavaScript?
+To create a cookie by using JavaScript you just need to assign a string value to the document.cookie object.
+
+document.cookie = "key1 = value1; key2 = value2; expires = date";
+13. How to read a cookie using JavaScript?
+The value of the document.cookie is used to create a cookie. Whenever you want to access the cookie you can use the string. The document.cookie string keep a list of name = value pairs separated by semicolons, where name is the name of a cookie and the value is its string value.
+
+14. How to delete a cookie using JavaScript?
+Deleting a cookie is much easier than creating or reading a cookie, you just need to set the expires = “past time” and make sure one thing defines the right cookie path unless few will not allow you to delete the cookie.
+
+15. What are escape characters and escape() function?
+Escape character: This character is required when you want to work with some special characters like single and double quotes, apostrophes, and ampersands. All the special character plays an important role in JavaScript, to ignore that or to print that special character, you can use the escape character backslash “\”. It will normally ignore and behave like a normal character.
+// Need escape character
+document.write("GeeksforGeeks: A Computer Science Portal "for Geeks" ")
+document.write("GeeksforGeeks: A Computer Science Portal \"for Geeks\" ")
+escape() function: The escape() function takes a string as a parameter and encodes it so that it can be transmitted to any computer in any network which supports ASCII characters.
+16. Whether JavaScript has a concept-level scope?
+JavaScript is not concept-level scope, the variables declared inside any function have scope inside the function.
+
+17. How generic objects can be created in JavaScript?
+To create a generic object in JavaScript use:
+
+var I = new object();
+
+
+18. Which keywords are used to handle exceptions?
+When executing JavaScript code, errors will almost definitely occur. These errors can occur due to the fault from the programmer’s side due to the wrong input or even if there is a problem with the logic of the program. But all errors can be solved by using the below commands.
+
+The try statement lets you test a block of code to check for errors.
+The catch statement lets you handle the error if any are present.
+The throw statement lets you make your own errors.
+
+
+19. What is the use of the blur function?
+It is used to remove focus from the selected element. This method starts the blur event or it can be attached to a function to run when a blur event occurs.
+
+20. What is the unshift method in JavaScript?
+It is used to insert elements in the front of an array. It is like a push method that inserts elements at the beginning of the array.
+
+
