@@ -179,12 +179,16 @@ The code-breaking line is avoid by JavaScript which is not preferable.
 let gfg= 10, GFG = 5,
 Geeks =
 gfg + GFG;
+
 9. Which company developed JavaScript?
 Netscape developed JavaScript and was created by Brenden Eich in the year of 1995.
 
 10. What are undeclared and undefined variables?
 Undefined: It occurs when a variable is declare but not assign any value. Undefined is not a keyword.
 Undeclared: It occurs when we try to access any variable which is not initialize or declare earlier using the var or const keyword. If we use ‘typeof’ operator to get the value of an undeclare variable, we will face the runtime error with the return value as “undefined”. The scope of the undeclare variables is always global.
+
+
+
 11. Write a JavaScript code for adding new elements dynamically. 
 
 <!DOCTYPE html>
@@ -209,3 +213,31 @@ Undeclared: It occurs when we try to access any variable which is not initialize
 </body>
   
 </html>
+
+
+
+1. What are all the looping structures in JavaScript ?
+while loop: A while loop is a control flow statement that allows code to be executed repeatedly based on a given Boolean condition. The while loop can be thought of as a repeating if statement.
+for loop: A for loop provides a concise way of writing the loop structure. Unlike a while loop, for statement consumes the initialization, condition and increment/decrement in one line thereby providing a shorter, easy to debug structure of looping.
+do while: A do-while loop is similar to while loop with the only difference that it checks the condition after executing the statements, and therefore is an example of Exit Control Loop.
+ 
+
+2. How can the style/class of an element be changed?
+To change the style/class of an element there are two possible ways. We use document.getElementByID method
+
+document.getElementById("myText").style.fontSize = "16px;
+document.getElementById("myText").className = "class";
+
+
+3. Explain how to read and write a file using JavaScript?
+The readFile() functions is used for reading operation.
+readFile( Path, Options, Callback)
+The writeFile() functions is used for writing operation.
+writeFile( Path, Data, Callback)
+
+
+4. What is called Variable typing in JavaScript ?
+The variable typing is the type of variable used to store a number and using that same variable to assign a “string”.
+
+Geeks = 42;
+Geeks = "GeeksforGeeks";
