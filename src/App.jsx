@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // // import { DeleteButton } from "./components/buttons/DeleteButton/DeleteButton";
 // import DeleteButton from "./components/buttons/DeleteButton/DeleteButton";
 // import TrashButton from "./components/TrashButton/TrashButton";
@@ -82,4 +83,22 @@ function App() {
   return <RouterProvider router={router} />;
 }
 
+=======
+import "./App.css";
+import { Header } from "./components/Header";
+import { TaskList } from "./components/TaskList";
+import "./../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+function App() {
+  
+  return (
+    <div className="App">
+      <Header />
+      <TaskList title="Random" subtitle="test" />
+
+    </div>
+  );
+}
+
+>>>>>>> 9a1e122a21ea045347e4d8c892a1ec012dc49da1
 export default App;

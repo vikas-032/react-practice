@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .app {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -15,4 +16,167 @@
 
 .app a:nth-child(odd) {
   background: rgb(255 255 255 / 6%);
+=======
+.App {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  font-size: 28px;
+  text-align: center;
+  margin: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  margin: auto;
+  border-bottom: 1px solid #d7d7d7;
+  font-size: 18px;
+  padding: 0px 10px;
+}
+
+img {
+  max-width: 40px;
+}
+
+ul {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.32) 0px 1px 3px 0px;
+}
+
+li {
+  font: 16px;
+  list-style: none;
+  margin: 20px 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li.completed {
+  box-shadow: rgb(48, 114, 0) 0px 1px 4px;
+}
+
+li.incompleted {
+  box-shadow: rgba(135, 20, 0, 0.689) 0px 1px 4px;
+}
+
+p {
+  font-size: 18px;
+  text-align: center;
+  align-items: center;
+}
+
+button {
+  padding: 10px;
+  margin: 10px;
+  font-size: 18px;
+  color: white;
+}
+
+/* button.add {
+  background-color: bisque;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 400px;
+} */
+
+/* button.sub {
+  background-color: red;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* button.reset {
+  background-color: aqua;
+} */
+
+/* button.del {
+  background-color: black;
+} */
+
+/* button.trigger {
+  background-color: purple;
+  padding-left: 40px;
+} */
+
+button.del {
+  border: 0px;
+  border-radius: 5px;
+  background-color: #be3434;
+  color: #ffff;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+button.trigger {
+  border: 0px;
+  border-radius: 5px;
+  background-color: #0f3460;
+  color: #ffff;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.box {
+  width: 600px;
+  margin: 20px auto;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 20px 5px;
+  border: 0px;
+  border-radius: 5px;
+}
+
+/* .box.success{
+  background-color: #baffbf;
+}
+
+.box.alert{
+  background-color: #ffb4b4;
+}
+
+.box.warning{
+  background-color: #ffdeb4;
+} */
+
+.box p {
+  margin: 10px;
+}
+
+.box p.description {
+  font-size: 14px;
+}
+
+.hidden {
+  display: none;
+}
+
+main {
+  min-height: 90vh;
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px;
+}
+
+footer {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #d7d7d7;
+>>>>>>> 9a1e122a21ea045347e4d8c892a1ec012dc49da1
 }

@@ -1,0 +1,310 @@
+Q1  Explain virtual dom and its role in React?
+Ans.. The virtual DOM is the light weight javascript representation of (DOM) Document Object Model that react use to 
+optimise how changes applied to the dom.
+The Virtual DOM role in react is to improve performance by:-
+1: Reducing Expensive DOM Opertaion :--- The virtual dom updated faster than actual dom. so react can make changes to the virtual DOM more
+cheaply.
+
+2: Identifed and Updating only affected Parts:---- When a component state changes react compare the new Virtual DOM tree to the previous one,
+and only update the part that are different.
+
+// Virtual DOM is Key React Features that enhance performance and efficient UI updates.
+
+
+
+Q2  How does react handle event Handling?
+Ans... Handling event in react is similar to handling event on Dom Elements
+:--- React Event names as camelCase rather than Lowercase.
+:--- With JSX you can pass a function as event handler, rather than string.
+for example--
+
+<button onclick ="activeLeaser()">
+Active Leaser
+</button>
+
+is slightly different in React:-
+<button onClick ={activateLeaser}>
+Activate Leaser
+</button>
+
+
+Q3 How can we handle error in React?
+Ans... There are different type of errors in React:-
+1- Syntax Error
+2- Reffernce Error
+3- Type Error
+4- Components lifecycle error
+
+Error boundries were introduce in react v16 and to use them you need to define the class component within either or both of the following lifecycle method:-
+getDerivedStateFromError() or componentDidCatch() :---this lifecycle method rendeers fallback UI after an error is thrown.
+
+
+
+Q4 How does react handle component state and Props?
+Ans... while both holds the information that influences the output and render they are different in one important way (similar to the function parameter)
+where state is managed within the component (similar to the function within the function).
+
+
+Q5  What is JSX?  
+Ans...  Javascript XML (JSX) is a syntax extension for javascript that allow you to write a HTML code in react a Javascript Library.
+JSX is similar to html , but it is stricker and can display dynamic information . It is extension of the javascript language on ES6.
+
+
+Q6. What is ReactJS?
+ReactJS is a JavaScript library used to build reusable components for the view layer in MVC architecture. It is highly efficient and uses a virtual DOM to render components. It works on the client side and is written in JSX.
+
+Q7. Explain the MVC architecture.
+The Model-View-Controller (MVC) framework is an architectural/design pattern that separates an application into three main logical components Model, View, and Controller. Each architectural component is built to handle specific development aspects of an application. It isolates the business, logic, and presentation layer from each other
+
+Q8. Explain the building blocks of React.
+The five main building blocks of React are:
+Components: These are reusable blocks of code that return HTML.
+JSX: It stands for JavaScript and XML and allows you to write HTML in React.
+Props and State: props are like function parameters and State is similar to variables.
+Context: This allows data to be passed through components as props in a hierarchy.
+Virtual DOM: It is a lightweight copy of the actual DOM which makes DOM manipulation easier.
+
+
+Q9. Explain props and state in React with differences
+Props are used to pass data from one component to another. The state is local data storage that is local to the component only and cannot be passed to other components.
+
+Here is the difference table of props and state In react
+
+PROPS
+
+STATE
+
+The Data is passed from one component to another.	The Data is passed within the component only.
+It is Immutable (cannot be modified).	It is Mutable ( can be modified).
+Props can be used with state and functional components.	The state can be used only with the state components/class component (Before 16.0).
+Props are read-only.	The state is both read and write.
+Q11. What is virtual DOM in React?
+React uses Virtual DOM which is like a lightweight copy of the actual DOM(a virtual representation of the DOM). So for every object that exists in the original DOM, there is an object for that in React Virtual DOM. It is the same, but it does not have the power to directly change the layout of the document. Manipulating DOM is slow, but manipulating Virtual DOM is fast as nothing gets drawn on the screen. So each time there is a change in the state of our application, the virtual DOM gets updated first instead of the real DOM.
+
+Q10. What is JSX?
+JSX is basically a syntax extension of regular JavaScript and is used to create React elements. These elements are then rendered to the React DOM. All the React components are written in JSX. To embed any JavaScript expression in a piece of code written in JSX we will have to wrap that expression in curly braces {}. 
+
+Example of JSX: The name written in curly braces { } signifies JSX
+
+
+const name = "Learner";
+
+const element = (
+  <h1>
+    Hello,
+    {name}.Welcome to GeeksforGeeks.
+  </h1>
+);
+Q12. What are components and their type in React?
+A Component is one of the core building blocks of React. In other words, we can say that every application you will develop in React will be made up of pieces called components. Components make the task of building UIs much easier. 
+
+ In React, we mainly have two types of components: 
+
+Functional Components: Functional components are simply javascript functions. We can create a functional component in React by writing a javascript function. 
+Class Components: The class components are a little more complex than the functional components. The functional components are not aware of the other components in your program whereas the class components can work with each other. We can pass data from one class component to another class component.
+Q13. How do browsers read JSX?
+In general, browsers are not capable of reading JSX and only can read pure JavaScript. The web browsers read JSX with the help of a transpiler. Transpilers are used to convert JSX into JavaScript. The transpiler used is called Babel
+
+Q14. Explain the steps to create a react application and print Hello World?
+To install React, first, make sure Node is installed on your computer. After installing Node. Open the terminal and type the following command.
+
+npx create-react-app <<Application_Name>>
+Navigate to the folder.
+
+cd <<Application_Name>>
+This is the first code of ReactJS Hello World!
+
+
+import React from "react";
+import "./App.css";
+function App() {
+  return <div className="App">Hello World !</div>;
+}
+export default App;
+
+
+
+
+
+
+1. What are the differences between Java and JavaScript? 
+JavaScript is a client-side scripting language and Java is object Oriented Programming language. Both of them are totally different from each other.
+
+JavaScript: It is a light-weighted programming language (“scripting language”) for developing interactive web pages. It can insert dynamic text into the HTML elements. JavaScript is also known as the browser’s language.
+Java: Java is one of the most popular programming languages. It is an object-oriented programming language and has a virtual machine platform that allows you to create compiled programs that run on nearly every platform. Java promised, “Write Once, Run Anywhere”.
+2. What are JavaScript Data Types? 
+There are three major Data types in JavaScript.
+
+Primitive
+Numbers
+Strings
+Boolean
+Symbol
+Trivial
+Undefined
+Null
+Composite
+Objects
+Functions
+Arrays
+3. Which symbol is used for comments in JavaScript? 
+Comments prevent the execution of statements. Comments are ignored while the compiler executes the code. There are two type of symbols to represent comments in JavaScript:
+
+Double slash: It is known as a single-line comment.
+// Single line comment
+Slash with Asterisk: It is known as a multi-line comment.
+/* 
+Multi-line comments
+...
+*/
+4. What would be the result of 3+2+”7″?
+ Here, 3 and 2 behave like an integer, and “7” behaves like a string. So 3 plus 2 will be 5. Then the output will be 5+”7″ = 57.
+
+5. What is the use of the isNaN function?
+ The number isNan function determines whether the passed value is NaN (Not a number) and is of the type “Number”. In JavaScript, the value NaN is considered a type of number. It returns true if the argument is not a number, else it returns false.
+
+6. Which is faster in JavaScript and ASP script?
+ JavaScript is faster compared to ASP Script. JavaScript is a client-side scripting language and does not depend on the server to execute. The ASP script is a server-side scripting language always dependable on the server.
+
+7. What is negative infinity?
+ The negative infinity is a constant value represents the lowest available value. It means that no other number is lesser than this value. It can be generate using a self-made function or by an arithmetic operation. JavaScript shows the NEGATIVE_INFINITY value as -Infinity.
+
+8. Is it possible to break JavaScript Code into several lines?
+ Yes, it is possible to break the JavaScript code into several lines in a string statement. It can be broken by using the backslash n ‘\n’. 
+For example:
+
+console.log("A Online Computer Science Portal\n for Geeks")
+The code-breaking line is avoid by JavaScript which is not preferable.
+
+let gfg= 10, GFG = 5,
+Geeks =
+gfg + GFG;
+
+9. Which company developed JavaScript?
+Netscape developed JavaScript and was created by Brenden Eich in the year of 1995.
+
+10. What are undeclared and undefined variables?
+Undefined: It occurs when a variable is declare but not assign any value. Undefined is not a keyword.
+Undeclared: It occurs when we try to access any variable which is not initialize or declare earlier using the var or const keyword. If we use ‘typeof’ operator to get the value of an undeclare variable, we will face the runtime error with the return value as “undefined”. The scope of the undeclare variables is always global.
+
+
+
+11. Write a JavaScript code for adding new elements dynamically. 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="create()">
+        Click Here!
+    </button>
+
+    <script>
+        function create() {
+            let geeks = document.createElement('geeks');
+            geeks.textContent = "Geeksforgeeks";
+            geeks.setAttribute('class', 'note');
+            document.body.appendChild(geeks);
+        }
+    </script>
+</body>
+  
+</html>
+
+
+
+1. What are all the looping structures in JavaScript ?
+while loop: A while loop is a control flow statement that allows code to be executed repeatedly based on a given Boolean condition. The while loop can be thought of as a repeating if statement.
+for loop: A for loop provides a concise way of writing the loop structure. Unlike a while loop, for statement consumes the initialization, condition and increment/decrement in one line thereby providing a shorter, easy to debug structure of looping.
+do while: A do-while loop is similar to while loop with the only difference that it checks the condition after executing the statements, and therefore is an example of Exit Control Loop.
+ 
+
+2. How can the style/class of an element be changed?
+To change the style/class of an element there are two possible ways. We use document.getElementByID method
+
+document.getElementById("myText").style.fontSize = "16px;
+document.getElementById("myText").className = "class";
+
+
+3. Explain how to read and write a file using JavaScript?
+The readFile() functions is used for reading operation.
+readFile( Path, Options, Callback)
+The writeFile() functions is used for writing operation.
+writeFile( Path, Data, Callback)
+
+
+4. What is called Variable typing in JavaScript ?
+The variable typing is the type of variable used to store a number and using that same variable to assign a “string”.
+
+Geeks = 42;
+Geeks = "GeeksforGeeks";
+
+
+
+5. How to convert the string of any base to integer in JavaScript?
+In JavaScript, parseInt() function is used to convert the string to an integer. This function returns an integer of base which is specified in second argument of parseInt() function. The parseInt() function returns Nan (not a number) when the string doesn’t contain number.
+
+6. Explain how to detect the operating system on the client machine?
+To detect the operating system on the client machine, one can simply use navigator.appVersion or navigator.userAgent property. The Navigator appVersion property is a read-only property and it returns the string that represents the version information of the browser.
+
+7. What are the types of Pop up boxes available in JavaScript?
+There are three types of pop boxes available in JavaScript.
+
+Alert
+Confirm
+Prompt
+8. What is the difference between an alert box and a confirmation box?
+An alert box will display only one button which is the OK button. It is used to inform the user about the agreement has to agree. But a Confirmation box displays two buttons OK and cancel, where the user can decide to agree or not.
+
+9. What is the disadvantage of using innerHTML in JavaScript?
+There are lots of disadvantages of using the innerHTML in JavaScript as the content will replace everywhere. If you use += like “innerHTML = innerHTML + ‘html'” still the old content is replaced by HTML. It preserves event handlers attached to any DOM elements.
+
+10. What is the use of void(0) ?
+The void(0) is used to call another method without refreshing the page during the calling time parameter “zero” will be passed.
+
+11. What are JavaScript Cookies ?
+Cookies are small files that are stored on a user’s computer. They are used to hold a modest amount of data specific to a particular client and website and can be accessed either by the web server or by the client’s computer. When cookies were invented, they were basically little documents containing information about you and your preferences. For instance, when you select the language in which you want to view your website, the website would save the information in a document called a cookie on your computer, and the next time when you visit the website, it would be able to read a cookie saved earlier.
+
+12. How to create a cookie using JavaScript?
+To create a cookie by using JavaScript you just need to assign a string value to the document.cookie object.
+
+document.cookie = "key1 = value1; key2 = value2; expires = date";
+13. How to read a cookie using JavaScript?
+The value of the document.cookie is used to create a cookie. Whenever you want to access the cookie you can use the string. The document.cookie string keep a list of name = value pairs separated by semicolons, where name is the name of a cookie and the value is its string value.
+
+14. How to delete a cookie using JavaScript?
+Deleting a cookie is much easier than creating or reading a cookie, you just need to set the expires = “past time” and make sure one thing defines the right cookie path unless few will not allow you to delete the cookie.
+
+15. What are escape characters and escape() function?
+Escape character: This character is required when you want to work with some special characters like single and double quotes, apostrophes, and ampersands. All the special character plays an important role in JavaScript, to ignore that or to print that special character, you can use the escape character backslash “\”. It will normally ignore and behave like a normal character.
+// Need escape character
+document.write("GeeksforGeeks: A Computer Science Portal "for Geeks" ")
+document.write("GeeksforGeeks: A Computer Science Portal \"for Geeks\" ")
+escape() function: The escape() function takes a string as a parameter and encodes it so that it can be transmitted to any computer in any network which supports ASCII characters.
+16. Whether JavaScript has a concept-level scope?
+JavaScript is not concept-level scope, the variables declared inside any function have scope inside the function.
+
+17. How generic objects can be created in JavaScript?
+To create a generic object in JavaScript use:
+
+var I = new object();
+
+
+18. Which keywords are used to handle exceptions?
+When executing JavaScript code, errors will almost definitely occur. These errors can occur due to the fault from the programmer’s side due to the wrong input or even if there is a problem with the logic of the program. But all errors can be solved by using the below commands.
+
+The try statement lets you test a block of code to check for errors.
+The catch statement lets you handle the error if any are present.
+The throw statement lets you make your own errors.
+
+
+19. What is the use of the blur function?
+It is used to remove focus from the selected element. This method starts the blur event or it can be attached to a function to run when a blur event occurs.
+
+20. What is the unshift method in JavaScript?
+It is used to insert elements in the front of an array. It is like a push method that inserts elements at the beginning of the array.
+
+
